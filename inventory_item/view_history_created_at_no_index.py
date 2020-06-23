@@ -6,4 +6,4 @@ data = [
     716.955,
 ]
 
-print(round(sum(data) / len(data), 3))
+print("%.0f" % (round(sum(data) / len(data), 3) * 1000))

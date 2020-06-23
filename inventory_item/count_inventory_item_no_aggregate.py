@@ -14,7 +14,7 @@ data = [
 x = [t[0] for t in data]
 y = [t[1] for t in data]
 
-a = round(sum(x) / len(x), 3)
-b = round(sum(y) / len(y), 3)
+a = round(sum(x) / len(x), 3) * 1000
+b = round(sum(y) / len(y), 3) * 1000
 
-print("%6.3f %8.3f" % (a, b))
+print("%.0f %.0f" % (a, b))

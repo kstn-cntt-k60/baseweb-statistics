@@ -74,8 +74,8 @@ dataset = {
 }
 
 def compute_avg(array):
-    return round(sum(array) / len(array), 3)
+    return round(sum(array) / len(array), 3) * 1000
 
 avgs = [(offset, compute_avg(dataset[offset])) for offset in dataset]
 for e in avgs:
-    print("%7d %8.3f" % (e[0], e[1]))
+    print("%7d %8.0f" % (e[0], e[1]))
